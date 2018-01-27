@@ -1,100 +1,162 @@
-#content {
-    text-align: center;
-    padding-top: 15%;
-    background: url(img/confortableDesk.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 900px;
-    color: white;
-    font-family: 'Baloo Bhaijaan', cursive;
+/*google font*/
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu|Catamaran');
+
+
+/*font-family: 'Baloo Tammudu', cursive;*/
+/*font-family: 'Catamaran', sans-serif;*/
+
+/*html element*/
+
+body{
+   font-family: 'Baloo Tammudu', cursive; 
 }
 
 
-h1 {
-    font-weight: 700;
-    font-size: 5em;
+
+/*common utility*/
+
+.shadow{
+    text-shadow: 
+        0px 2px 1px rgba(22,22,22,0.8) ,
+        0px 1px 4px rgba(22,22,22,0.3) , 
+        0px 4px 10px rgba(55,55,55,0.1);
 }
 
-h1,
-.headerH3 {
-    text-shadow: 0px 3px 0px RGBA(33, 33, 33, 0.2), 0px 5px 0px RGBA(33, 33, 33, 0.1);
+.clear{
+    clear: both;
 }
 
-button{
-    margin: 5%;
-}
 
-hr {
-    width: 40%;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    font-size: 1.5em;
-}
-
-.navbar {
-    margin-bottom: 0px;
-}
-
-.navbar-full {
+/* navbar*/
+.navbar-full{
     border-radius: 0px;
 }
 
-#formcontent {
-    text-align: center;
-    margin: 0 auto;
-    width:500px;
-    max-width: 80%;
+.navbar{
+    font-family: 'Catamaran', sans-serif;
     font-size: 20px;
-    text-shadow: 0px 2px 0px RGBA(33, 33, 33, 0.5), 0px 3px 0px RGBA(33, 33, 33, 0.2);
+    margin-bottom: 0;
 }
 
-.grid {
-    background: pink;
-    border: 1px solid red;
-}
-
-.jobs {
-    padding-top: 5%;
-}
-
-.fadeBg {
-    background-color: rgba(232, 232, 232, 0.7);
-    height: 817px;
-}
-
-.thumbnailArea {
-    padding: 2% 5% 0 5%;
-    background: #222222 url('img/bethany-legg-9248.jpg') center;
+/*cover*/
+.cover{
+    background: url('img/confortableDesk.jpg');
+    height: 900px;
     background-size: cover;
-    
+    background-position: center;
+   
 }
 
-.pageSection {
-    /*padding: auto;*/
-    text-align: center;
-    padding: 0px;
+.cover i {
+    font-size: 65px;
 }
 
-.btn-default {
-    font-family: 'Baloo Bhaijaan', cursive;
-}
+    /*title*/
 
-.break {
-    background: #222;
-    padding: auto;
-}
-
-.break h3 {
+.mainInfo{
+    /*text-align: center;*/
     color: white;
-    font-weight: 900;
-    text-align: center;
-    padding: 3% 0;
+    margin: 0 auto;
+    padding-top: 15%;
+    width: 700px;
+    max-width: 80%;
+}
+
+
+
+h1{
+    padding: 0;
+}
+
+.coverH1{
+    font-size: 80px;
     margin: 0;
 }
 
-.footer{
+
+.coverH2{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.coverH2:after{
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background: #fff;
+    margin: 10px auto 20px auto;
+}
+
+    /*form*/
+.coverForm{
+    margin: 0 auto;
+    width: 350px;
+}
+
+.btnSpacing{
+    margin: 5px;
+}
+
+    /*downward Arrow*/
+.arrow{
+    margin: 0 auto;
+    width: 15%;
     text-align: center;
+}
+
+.arrow i{
+    font-size: 40px;
+    
     color: white;
-    padding: 5px;
+    
+}
+
+
+/*break*/
+.break{
+    
+    background: #222;
+   
+}
+
+.break h3{
+    text-align: center;
+    margin: 0;
+    padding: 12px ;
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+}
+
+
+
+/*slider*/
+
+
+
+/*jobs*/
+.jobBK{
+    background: url(img/bethany-legg-9248.jpg);
+    padding: 3% 5%;
+}
+
+/*pages*/
+.pages{
+    text-align: center;
+}
+
+/*copyright*/
+.copyright{
+    color: white;
+    text-align: center;
+}
+
+/*RWD*/
+@media screen and (max-width:500px){
+    .coverH1{
+    font-size: 65px;
+    margin: 0;
+}
+
 }
